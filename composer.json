@@ -1,0 +1,14 @@
+{
+  "require": {
+    "doctrine/data-fixtures": "1.0",
+    "doctrine/orm": "2.4.7",
+    "symfony/yaml": "2.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Acme\\": [
+        "src/"
+      ]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+Acme\ArticleAttribute:
+  type: entity
+  id:
+    article:
+      type: integer
+      associationKey: true
+    attribute:
+      type: string
+      associationKey: true
+  fields:
+    value:
+      type: string
+  manyToOne:
+    article:
+      targetEntity: Article
+      inversedBy: attributes

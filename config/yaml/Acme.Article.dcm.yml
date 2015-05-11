@@ -1,0 +1,15 @@
+Acme\Article:
+  type: entity
+  id:
+    id:
+      type: integer
+      length: 10
+      generator:
+        strategy: AUTO
+  fields:
+    title:
+      type: string
+  oneToMany:
+    attributes:
+      targetEntity: ArticleAttribute
+      mappedBy: article
